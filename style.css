@@ -315,3 +315,30 @@ nav a{
 }
 
 }
+
+
+
+
+
+
+/* JavaScript Animation */
+
+.hidden{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+nav a.active{
+    color:#38bdf8;
+    font-weight:bold;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
