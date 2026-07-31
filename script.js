@@ -1,31 +1,16 @@
-const words = [
-"Web Developer",
-"AI Researcher",
-"Computer Science Graduate",
-"SAP BTP Learner"
-];
+const observer = new IntersectionObserver(entries => {
 
-let i = 0;
+entries.forEach(entry => {
 
-function typing(){
+if(entry.isIntersecting){
 
-document.getElementById("typing").innerHTML =
-words[i];
-
-i++;
-
-if(i>=words.length){
-i=0;
-}
+entry.target.classList.add("show");
 
 }
 
-setInterval(typing,2000);
+});
 
-typing();
+});
 
-document.getElementById("theme").onclick=function(){
-
-document.body.classList.toggle("light");
-
-}
+document.querySelectorAll(".contact-info,.contact-form")
+.forEach(el=>observer.observe(el));
