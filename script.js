@@ -8,9 +8,8 @@
 //==============================
 
 const words = [
-    "Full Stack Developer",
+    "web Developer",
     "AI Researcher",
-    "SAP BTP Developer",
     "Machine Learning Engineer",
     "Web Designer",
     "Python Developer"
