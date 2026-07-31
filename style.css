@@ -212,3 +212,18 @@ justify-content:center;
 }
 
 }
+.contact-info,
+.contact-form{
+
+opacity:0;
+transform:translateY(70px);
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
